@@ -124,3 +124,10 @@ $('.menu-bar .nav-link').on('click', function() {
         $('body').removeClass('menuoverlab');
     }
 });
+
+document.getElementById('formSubmitBtn').addEventListener('click', function () {
+  // Add your form validation or submission logic here
+  // If successful, trigger the modal
+  var modal = new bootstrap.Modal(document.getElementById('success_tic'));
+  modal.show();
+});
